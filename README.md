@@ -4,7 +4,7 @@
 - Camille Dal'Lin — RA: a2648784
 - Alexandre de Lucas — RA: a2678284
 - Julia Pivello — RA: a2565684
-- Mateus de Jesus Gonçalves — RA: 2648903
+- Mateus de Jesus Gonçalves — RA: a2648903
 
 ## ODS Selecionado
 ODS 5 — Igualdade de Gênero
