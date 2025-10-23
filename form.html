@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição - SheCodes</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo">SheCodes</a>
+            <ul>
+                <li><a href="index.html#sobre">Sobre</a></li>
+                <li><a href="index.html#mentoras">Encontrar Mentora</a></li>
+                <li><a href="form.html">Inscreva-se</a></li>
+            </ul>
+            <a href="form.html" class="cta-button nav-button">Quero ser Mentora</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="form-page">
+            <div class="form-container">
+                <h2>Crie sua conta</h2>
+                <p>Junte-se à comunidade SheCodes como mentorada ou mentora.</p>
+                
+                <form action="login.html" method="POST">
+                    
+                    <div class="form-group">
+                        <label for="nome">Nome Completo</label>
+                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="seuemail@dominio.com" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="senha">Senha</label>
+                        <input type="password" id="senha" name="senha" placeholder="Mínimo de 8 caracteres" required minlength="8">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="area">Área de Interesse</label>
+                        <select id="area" name="area" required>
+                            <option value="">Selecione sua área principal</option>
+                            <option value="frontend">Front-End</option>
+                            <option value="backend">Back-End</option>
+                            <option value="uiux">UI/UX Design</option>
+                            <option value="dados">Ciência de Dados</option>
+                            <option value="seguranca">Cibersegurança</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="nivel">Nível de Experiência</label>
+                        <select id="nivel" name="nivel" required>
+                            <option value="">Selecione seu nível</option>
+                            <option value="iniciante">Iniciante (buscando 1º emprego)</option>
+                            <option value="migracao">Migração de Carreira</option>
+                            <option value="junior">Júnior (em evolução)</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="termos" name="termos" required>
+                        <label for="termos">Eu li e aceito os <a href="#">Termos de Uso</a>.</label>
+                    </div>
+
+                    <button type="submit" class="cta-button">Cadastrar</button>
+                </form>
+                
+                <p class="login-link">
+                    Já tem uma conta? <a href="login.html">Faça login aqui</a>.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 SheCodes. Todos os direitos reservados.</p>
+            <p class="ods-info">Este projeto apoia o ODS 5 — Igualdade de Gênero.</p>
+            
+<div class="dev-info">
+    <p>Desenvolvido por:</p>
+    <ul>
+        <li>Camille Dal'Lin (a2648784) — <a href="https://github.com/camille-dallin/cv-front-end" target="_blank">Repositório</a></li>
+        <li>Alexandre de Lucas (a2678284) — <a href="https://github.com/Alexandreluccass/Curriculo.git" target="_blank">Repositório</a></li>
+        <li>Julia Pivello (a2565684) — <a href="https://github.com/seu-grupo/projeto-shecodes" target="_blank">Repositório</a></li>
+        <li>Mateus de Jesus Gonçalves (a2648903) — <a href="https://github.com/seu-grupo/projeto-shecodes" target="_blank">Repositório</a></li>
+    </ul>
+    <p class="disciplina-info">Programação Web Front-End — UTFPR (2024)</p>
+</div>
+        </div>
+    </footer>
+    
+</body>
+</html>
