@@ -22,7 +22,7 @@
                 <li><a href="form.html">Inscreva-se</a></li>
             </ul>
             <a href="form.html" class="cta-button nav-button">Quero ser Mentora</a>
-            <a href="admin.html" class="cta-button nav-button">Admin</a>
+            <a href="admin.html" class="cta-button nav-button" style="background: transparent; border: 1px solid #7f5af0;">Admin</a>
         </nav>
     </header>
 
@@ -69,21 +69,31 @@
             <div class="container">
                 <h2>Nossas Mentoras Destaque</h2>
                 <div class="mentor-grid">
-                    <div class="mentor-card">
-                        <img src="images/camille.jpeg" alt="Foto da Mentora 2">
+                    
+                    <div class="mentor-card" onclick="abrirModal(this)" 
+                         data-nome="Camille Dal'Lin" 
+                         data-cargo="Eng. de Software Sênior @ Google" 
+                         data-img="images/camille.jpeg"
+                         data-desc="Camille tem mais de 10 anos de experiência em grandes tech companies. Especialista em arquitetura de software, ela adora ajudar mulheres a negociarem seus salários e crescerem na carreira.">
+                        <img src="images/camille.jpeg" alt="Foto da Camille">
                         <div class="info">
                             <h3>Camille Dal'Lin</h3>
                             <p>Eng. de Software Sênior @ Google</p>
                         </div>
                     </div>
-                    <div class="mentor-card">
-                        <img src="images/julia.jpeg" alt="Foto da Mentora 2">
+
+                    <div class="mentor-card" onclick="abrirModal(this)"
+                         data-nome="Julia Pivello" 
+                         data-cargo="Designer UX/UI Pleno @ Nubank" 
+                         data-img="images/julia.jpeg"
+                         data-desc="Julia migrou do Design Gráfico para UX e hoje cria experiências incríveis no setor financeiro. Suas mentorias focam em construção de portfólio, acessibilidade e processos de Design Thinking.">
+                        <img src="images/julia.jpeg" alt="Foto da Julia">
                         <div class="info">
                             <h3>Julia Pivello</h3>
                             <p>Designer UX/UI Pleno @ Nubank</p>
                         </div>
                     </div>
-                    </div>
+
                 </div>
             </div>
         </section>
@@ -92,9 +102,24 @@
     <footer>
         <div class="container">
             <p>&copy; 2025 SheCodes. Todos os direitos reservados.</p>
-            <p class="ods-info">Este projeto apoia o ODS 5 — Igualdade de Gênero.</p>
-            
-<div class="dev-info">
-    <p>Desenvolvido por:</p>
-    <ul>
-        <li>Camille Dal'Lin (a2648784) — <a
+        </div>
+    </footer>
+
+    <div id="mentorModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="fecharModal()">&times;</span>
+            <div class="modal-body">
+                <img id="modalImg" src="" alt="Foto da Mentora">
+                <div class="modal-text">
+                    <h2 id="modalNome"></h2>
+                    <h4 id="modalCargo"></h4>
+                    <p id="modalDesc"></p>
+                    <button id="btnAgendar" class="cta-button" onclick="agendarMentoria()">Agendar Mentoria</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
