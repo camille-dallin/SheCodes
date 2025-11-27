@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - SheCodes</title>
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -24,18 +24,18 @@
                 <h2>Bem-vinda de volta!</h2>
                 <p>Acesse sua conta para agendar mentorias.</p>
                 
-                <form> 
+                <form onsubmit="fazerLogin(event)"> 
                     <div class="form-group">
                         <label for="email">E-mail</label>
-                        <input type="email" id="email" placeholder="seuemail@dominio.com">
+                        <input type="email" id="email" placeholder="seuemail@dominio.com" required>
                     </div>
                     
                     <div class="form-group">
                         <label for="senha">Senha</label>
-                        <input type="password" id="senha" placeholder="Sua senha">
+                        <input type="password" id="senha" placeholder="Sua senha" required>
                     </div>
 
-                    <button type="button" class="cta-button" onclick="alert('Login simulado com sucesso!')">Entrar</button>
+                    <button type="submit" class="cta-button">Entrar</button>
                 </form>
                 
                 <p class="login-link">
@@ -51,5 +51,21 @@
         </div>
     </footer>
 
+    <script>
+        function fazerLogin(event) {
+            event.preventDefault();
+            // Simulação de verificação
+            const email = document.getElementById("email").value;
+            const senha = document.getElementById("senha").value;
+
+            if(email && senha) {
+                alert("Login realizado com sucesso! Vamos encontrar sua mentora.");
+                // Redireciona para a seção de mentoras na home
+                window.location.href = "index.html#mentoras"; 
+            } else {
+                alert("Preencha todos os campos.");
+            }
+        }
+    </script>
 </body>
 </html>

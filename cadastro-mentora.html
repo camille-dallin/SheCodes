@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inscrição Aluna - SheCodes</title>
+    <title>Inscrição Mentora - SheCodes</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
@@ -14,7 +14,7 @@
             <ul class="nav-links">
                 <li><a href="index.html#sobre">Sobre</a></li>
                 <li><a href="index.html#mentoras">Encontrar Mentora</a></li>
-                <li><a href="form.html">Inscreva-se</a></li>
+                <li><a href="form.html">Sou Aluna</a></li>
             </ul>
         </nav>
     </header>
@@ -22,8 +22,8 @@
     <main>
         <section class="form-page">
             <div class="form-container">
-                <h2>Crie sua conta (Aluna)</h2>
-                <p>Junte-se à comunidade SheCodes para aprender e evoluir.</p>
+                <h2>Torne-se uma Mentora</h2>
+                <p>Compartilhe conhecimento e ajude outras mulheres a crescerem na TI.</p>
                 
                 <form id="formCadastro">
                     <div class="form-group">
@@ -32,22 +32,33 @@
                     </div>
                     
                     <div class="form-group">
-                        <label for="email">E-mail</label>
+                        <label for="email">E-mail Corporativo ou Pessoal</label>
                         <input type="email" id="email" name="email" placeholder="seuemail@dominio.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cargo">Cargo Atual e Empresa</label>
+                        <input type="text" id="cargo" name="cargo" placeholder="Ex: Desenvolvedora Sênior @ Google" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="linkedin">Link do seu LinkedIn</label>
+                        <input type="url" id="linkedin" name="linkedin" placeholder="https://linkedin.com/in/seu-perfil" required>
                     </div>
                     
                     <div class="form-group">
-                        <label for="senha">Senha</label>
+                        <label for="senha">Crie uma Senha</label>
                         <input type="password" id="senha" name="senha" placeholder="Mínimo de 8 caracteres" required minlength="8">
                     </div>
                     
                     <div class="form-group">
-                        <label for="area">Área de Interesse</label>
+                        <label for="area">Em qual área você pode mentorar?</label>
                         <select id="area" name="area" required>
-                            <option value="">Selecione sua área principal</option>
-                            <option value="frontend">Front-End</option>
-                            <option value="backend">Back-End</option>
-                            <option value="uiux">UI/UX Design</option>
+                            <option value="">Selecione sua especialidade</option>
+                            <option value="frontend">Front-End (HTML/CSS/JS)</option>
+                            <option value="backend">Back-End (Java/Python/Node)</option>
+                            <option value="carreira">Carreira e LinkedIn</option>
+                            <option value="design">UI/UX Design</option>
                         </select>
                     </div>
                     
@@ -56,12 +67,8 @@
                         <label for="termos">Eu li e aceito os <a href="#" onclick="abrirTermos(event)">Termos de Uso</a>.</label>
                     </div>
 
-                    <button type="submit" class="cta-button">Cadastrar</button>
+                    <button type="submit" class="cta-button">Enviar Inscrição</button>
                 </form>
-                
-                <p class="login-link">
-                    Já tem uma conta? <a href="login.html">Faça login aqui</a>.
-                </p>
             </div>
         </section>
     </main>
@@ -78,9 +85,8 @@
             <h3 style="color: #7f5af0; margin-bottom: 15px;">Termos de Uso e Privacidade</h3>
             <div style="text-align: left; max-height: 300px; overflow-y: auto; padding-right: 10px; font-size: 0.9rem; color: #ccc;">
                 <p>1. <strong>Objetivo:</strong> O SheCodes é uma plataforma educacional sem fins lucrativos.</p>
-                <p>2. <strong>Dados:</strong> Seus dados (nome e e-mail) são usados apenas para login e contato da mentoria.</p>
-                <p>3. <strong>Respeito:</strong> Não toleramos assédio ou discriminação. O desrespeito a esta regra resultará em banimento.</p>
-                <p>4. <strong>Gratuidade:</strong> Todas as mentorias oferecidas na plataforma devem ser gratuitas.</p>
+                <p>2. <strong>Voluntariado:</strong> Ao se cadastrar como mentora, você concorda em oferecer seu tempo voluntariamente, sem remuneração financeira pela plataforma.</p>
+                <p>3. <strong>Respeito:</strong> Mantenha uma conduta profissional e respeitosa com as mentoradas.</p>
             </div>
             <button onclick="fecharTermos()" class="cta-button" style="width: 100%; margin-top: 20px;">Entendi e Concordo</button>
         </div>

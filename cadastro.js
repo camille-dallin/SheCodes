@@ -8,7 +8,6 @@ document.addEventListener("DOMContentLoaded", function() {
             const nome = document.getElementById("nome").value;
             const email = document.getElementById("email").value;
 
-            // Pega o banco de dados existente ou cria vazio
             let usuarios = JSON.parse(localStorage.getItem("usuariosCadastrados")) || [];
 
             usuarios.push({
@@ -17,11 +16,19 @@ document.addEventListener("DOMContentLoaded", function() {
                 data: new Date().toLocaleString()
             });
 
-            // Salva de volta
             localStorage.setItem("usuariosCadastrados", JSON.stringify(usuarios));
 
             alert("Cadastro realizado com sucesso!");
-            window.location.href = "index.html";
+            window.location.href = "login.html";
         });
     }
 });
+
+function abrirTermos(event) {
+    if(event) event.preventDefault();
+    document.getElementById("termosModal").style.display = "flex";
+}
+
+function fecharTermos() {
+    document.getElementById("termosModal").style.display = "none";
+}
