@@ -1,7 +1,7 @@
 # SheCodes – Plataforma de Mentoria para Mulheres em Tecnologia
 
 ## 🔗 Acesso ao Projeto
-- **🌐 Site Online (GitHub Pages):** [https://camille-dallin.github.io/SheCodes/](https://camille-dallin.github.io/SheCodes/)
+- **🌐 Site Online (GitHub Pages):** [https://camille-dallin.github.io/SheCodes/](https://camille-dallin.github.io/SheCodes/) 
 - **📁 Repositório do Código:** [https://github.com/camille-dallin/SheCodes](https://github.com/camille-dallin/SheCodes)
 
 ---
