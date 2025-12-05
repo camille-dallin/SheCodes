@@ -61,22 +61,36 @@ O projeto está organizado nos seguintes arquivos principais:
 
 ---
 
+
 ## 🚀 Como Executar Localmente
-1 - Clonar o repositório
-# Clonar o repositório
+
+### 📥 1. Clonar o repositório
+
+```bash
 git clone https://github.com/camille-dallin/SheCodes.git
-# Entrar no diretório do projeto
+````
+
+Entrar no diretório do projeto:
+
+```bash
 cd SheCodes
+```
+---
+### ▶️ 2. Executar em um servidor local
 
-2 — Executar em um servidor local
-Usando VS Code + Live Server:
-   1. Abra o projeto no VS Code
-   2. Instale a extensão Live Server
-   3. Clique com o botão direito no arquivo index.html
-   4. Selecione Open with Live Server
-O navegador irá abrir automaticamente em um endereço como:
+Este projeto utiliza **HTML, CSS e JavaScript**, então a forma mais fácil de rodar é usando o **Live Server** no VS Code.
+
+#### Usando VS Code + Live Server:
+1. Abra o projeto no **VS Code**
+2. Instale a extensão **Live Server**
+3. Clique com o botão direito no arquivo `index.html`
+4. Selecione **Open with Live Server**
+
+O navegador abrirá automaticamente em um endereço como:
+```
 http://127.0.0.1:5500
-
-Caso o servidor não abra automaticamente, acesse:
+```
+Caso não abra automaticamente, acesse:
+```
 localhost:5500
-
+```
