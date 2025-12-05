@@ -23,8 +23,8 @@
 <main>
     <section class="form-page">
         <div class="form-container">
-
             <h2>Painel Administrativo</h2>
+            
             <p>Gerencie usuários cadastrados localmente.</p>
 
             <div class="form-group">
@@ -39,21 +39,26 @@
 
             <div style="display: flex; gap: 10px; margin-top: 20px;">
                 <button onclick="cadastrar()" class="cta-button">Cadastrar</button>
-                <button onclick="limparCampos()" class="cta-button" style="background:transparent; border: 1px solid #7f5af0;">Limpar</button>
+                <button onclick="limparCampos()" class="cta-button" style="background:transparent; border: 1px solid #7f5af0;">
+                    Limpar
+                </button>
             </div>
 
             <hr style="margin: 30px 0; border-color: #3a314d;">
 
             <h3>Pesquisar</h3>
+
             <div class="form-group">
                 <input type="text" id="pesquisa" placeholder="Pesquise por nome ou e-mail" oninput="pesquisar()">
             </div>
 
             <h3 style="margin-top: 20px;">Usuários cadastrados</h3>
+
             <ul id="listaUsuarios" style="list-style: none; padding: 0;"></ul>
 
-            <button onclick="excluirTodos()" class="cta-button" style="background:#ff4d4d; border-color: #ff4d4d; margin-top:20px;">Excluir Todos</button>
-
+            <button onclick="excluirTodos()" class="cta-button" style="background:#ff4d4d; border-color: #ff4d4d; margin-top:20px;">
+                Excluir Todos
+            </button>
         </div>
     </section>
 </main>
